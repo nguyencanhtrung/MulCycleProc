@@ -1,0 +1,598 @@
+Release 14.7 - xst P.20131013 (lin)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: fixedpoint_divider_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fixedpoint_divider_module.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fixedpoint_divider_module"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : fixedpoint_divider_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/ctnguyen/Works/MultiCycleProcessor/four_bits_CLA_adder.vhd" into library work
+Parsing entity <four_bits_CLA_adder>.
+Parsing architecture <Behavioral> of entity <four_bits_cla_adder>.
+Parsing VHDL file "/home/ctnguyen/Works/MultiCycleProcessor/carry_look_ahead_block.vhd" into library work
+Parsing entity <carry_look_ahead_block>.
+Parsing architecture <Behavioral> of entity <carry_look_ahead_block>.
+Parsing VHDL file "/home/ctnguyen/Works/MultiCycleProcessor/sixteen_bits_adder.vhd" into library work
+Parsing entity <sixteen_bits_adder>.
+Parsing architecture <Behavioral> of entity <sixteen_bits_adder>.
+Parsing VHDL file "/home/ctnguyen/Works/MultiCycleProcessor/thirtytwo_bits_adder.vhd" into library work
+Parsing entity <thirtytwo_bits_adder>.
+Parsing architecture <Behavioral> of entity <thirtytwo_bits_adder>.
+Parsing VHDL file "/home/ctnguyen/Works/MultiCycleProcessor/thirtytwo_bits_add_sub.vhd" into library work
+Parsing entity <thirtytwo_bits_add_sub>.
+Parsing architecture <Behavioral> of entity <thirtytwo_bits_add_sub>.
+Parsing VHDL file "/home/ctnguyen/Works/MultiCycleProcessor/unsigned_fixedpoint_divider_module.vhd" into library work
+Parsing entity <unsigned_fixedpoint_divider_module>.
+Parsing architecture <Behavioral> of entity <unsigned_fixedpoint_divider_module>.
+Parsing VHDL file "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" into library work
+Parsing entity <fixedpoint_divider_module>.
+Parsing architecture <Behavioral> of entity <fixedpoint_divider_module>.
+WARNING:HDLCompiler:946 - "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" Line 107: Actual for formal port operand_a is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" Line 115: Actual for formal port operand_a is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <fixedpoint_divider_module> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <thirtytwo_bits_add_sub> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <thirtytwo_bits_adder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <sixteen_bits_adder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <four_bits_CLA_adder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <carry_look_ahead_block> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <unsigned_fixedpoint_divider_module> (architecture <Behavioral>) with generics from library <work>.
+INFO:HDLCompiler:679 - "/home/ctnguyen/Works/MultiCycleProcessor/unsigned_fixedpoint_divider_module.vhd" Line 156. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/home/ctnguyen/Works/MultiCycleProcessor/unsigned_fixedpoint_divider_module.vhd" Line 74: Assignment to dummy_carry_out ignored, since the identifier is never used
+INFO:HDLCompiler:679 - "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" Line 180. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" Line 185. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fixedpoint_divider_module>.
+    Related source file is "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd".
+        BIT_WIDTH = 32
+INFO:Xst:3210 - "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" line 68: Output port <over_flow> of the instance <one_complement_dividend> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" line 68: Output port <carry_out> of the instance <one_complement_dividend> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" line 76: Output port <over_flow> of the instance <one_complement_divisor> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" line 76: Output port <carry_out> of the instance <one_complement_divisor> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" line 105: Output port <over_flow> of the instance <two_complement_udiv_quotient> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" line 105: Output port <carry_out> of the instance <two_complement_udiv_quotient> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" line 113: Output port <over_flow> of the instance <two_complement_udiv_remainder> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/MultiCycleProcessor/fixedpoint_divider_module.vhd" line 113: Output port <carry_out> of the instance <two_complement_udiv_remainder> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <invalidOp>.
+    Found 32-bit register for signal <quotient>.
+    Found 32-bit register for signal <remainder>.
+    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <udiv_start_en>.
+    Found 2-bit register for signal <controller.sign_check>.
+    Found 1-bit register for signal <done>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  69 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <fixedpoint_divider_module> synthesized.
+
+Synthesizing Unit <thirtytwo_bits_add_sub>.
+    Related source file is "/home/ctnguyen/Works/MultiCycleProcessor/thirtytwo_bits_add_sub.vhd".
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal result<31> may hinder XST clustering optimizations.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <thirtytwo_bits_add_sub> synthesized.
+
+Synthesizing Unit <thirtytwo_bits_adder>.
+    Related source file is "/home/ctnguyen/Works/MultiCycleProcessor/thirtytwo_bits_adder.vhd".
+INFO:Xst:3210 - "/home/ctnguyen/Works/MultiCycleProcessor/thirtytwo_bits_adder.vhd" line 57: Output port <G_OUT> of the instance <CLA_block> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/MultiCycleProcessor/thirtytwo_bits_adder.vhd" line 57: Output port <P_OUT> of the instance <CLA_block> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <thirtytwo_bits_adder> synthesized.
+
+Synthesizing Unit <sixteen_bits_adder>.
+    Related source file is "/home/ctnguyen/Works/MultiCycleProcessor/sixteen_bits_adder.vhd".
+    Summary:
+	no macro.
+Unit <sixteen_bits_adder> synthesized.
+
+Synthesizing Unit <four_bits_CLA_adder>.
+    Related source file is "/home/ctnguyen/Works/MultiCycleProcessor/four_bits_CLA_adder.vhd".
+    Summary:
+Unit <four_bits_CLA_adder> synthesized.
+
+Synthesizing Unit <carry_look_ahead_block>.
+    Related source file is "/home/ctnguyen/Works/MultiCycleProcessor/carry_look_ahead_block.vhd".
+    Summary:
+	no macro.
+Unit <carry_look_ahead_block> synthesized.
+
+Synthesizing Unit <unsigned_fixedpoint_divider_module>.
+    Related source file is "/home/ctnguyen/Works/MultiCycleProcessor/unsigned_fixedpoint_divider_module.vhd".
+        BIT_WIDTH = 32
+INFO:Xst:3210 - "/home/ctnguyen/Works/MultiCycleProcessor/unsigned_fixedpoint_divider_module.vhd" line 64: Output port <over_flow> of the instance <add_sub_instance> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ctnguyen/Works/MultiCycleProcessor/unsigned_fixedpoint_divider_module.vhd" line 64: Output port <carry_out> of the instance <add_sub_instance> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <invalidOp>.
+    Found 32-bit register for signal <quotient>.
+    Found 32-bit register for signal <rem_out>.
+    Found 64-bit register for signal <remainder>.
+    Found 32-bit register for signal <divisor>.
+    Found 32-bit register for signal <trans_remainder>.
+    Found 32-bit register for signal <divide_process.counter>.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <done>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 14                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | invalidop_state                                |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <divide_process.counter[31]_GND_72_o_add_15_OUT> created at line 144.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 226 D-type flip-flop(s).
+	inferred  62 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <unsigned_fixedpoint_divider_module> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 14
+ 1-bit register                                        : 5
+ 2-bit register                                        : 1
+ 32-bit register                                       : 7
+ 64-bit register                                       : 1
+# Multiplexers                                         : 73
+ 1-bit 2-to-1 multiplexer                              : 38
+ 32-bit 2-to-1 multiplexer                             : 24
+ 64-bit 2-to-1 multiplexer                             : 11
+# FSMs                                                 : 2
+# Xors                                                 : 320
+ 1-bit xor2                                            : 320
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 295
+ Flip-Flops                                            : 295
+# Multiplexers                                         : 73
+ 1-bit 2-to-1 multiplexer                              : 38
+ 32-bit 2-to-1 multiplexer                             : 24
+ 64-bit 2-to-1 multiplexer                             : 11
+# FSMs                                                 : 2
+# Xors                                                 : 320
+ 1-bit xor2                                            : 320
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:3]> with user encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ idle             | 000
+ wait_2complement | 001
+ enable_udiv      | 010
+ collect_result   | 011
+ complete         | 100
+------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <unsigned_divider/FSM_1> on signal <state[1:4]> with user encoding.
+----------------------------------
+ State                | Encoding
+----------------------------------
+ invalidop_state      | 0000
+ wait_state           | 0001
+ shift_left_remainder | 0010
+ subtract_divisor     | 0011
+ wait_state_sub       | 0100
+ test_remainder       | 0101
+ remainder_positive   | 0110
+ remainder_negative   | 0111
+ counter_check        | 1000
+ done_state           | 1001
+----------------------------------
+WARNING:Xst:1710 - FF/Latch <rem_out_31> (without init value) has a constant value of 0 in block <unsigned_fixedpoint_divider_module>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <fixedpoint_divider_module> ...
+
+Optimizing unit <thirtytwo_bits_add_sub> ...
+
+Optimizing unit <unsigned_fixedpoint_divider_module> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fixedpoint_divider_module, actual ratio is 1.
+FlipFlop unsigned_divider/state_FSM_FFd2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 302
+ Flip-Flops                                            : 302
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : fixedpoint_divider_module.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 838
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 51
+#      LUT3                        : 66
+#      LUT4                        : 141
+#      LUT5                        : 185
+#      LUT6                        : 324
+#      MUXCY                       : 31
+#      MUXF7                       : 5
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 302
+#      FD                          : 230
+#      FDR                         : 3
+#      FDRE                        : 69
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 132
+#      IBUF                        : 66
+#      OBUF                        : 66
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             302  out of  126800     0%  
+ Number of Slice LUTs:                  768  out of  63400     1%  
+    Number used as Logic:               768  out of  63400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    773
+   Number with an unused Flip Flop:     471  out of    773    60%  
+   Number with an unused LUT:             5  out of    773     0%  
+   Number of fully used LUT-FF pairs:   297  out of    773    38%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                         133
+ Number of bonded IOBs:                 133  out of    210    63%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 302   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.368ns (Maximum Frequency: 296.868MHz)
+   Minimum input arrival time before clock: 8.818ns
+   Maximum output required time after clock: 0.640ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.368ns (frequency: 296.868MHz)
+  Total number of paths / destination ports: 14242 / 369
+-------------------------------------------------------------------------
+Delay:               3.368ns (Levels of Logic = 26)
+  Source:            unsigned_divider/divide_process.counter_0 (FF)
+  Destination:       unsigned_divider/state_FSM_FFd1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: unsigned_divider/divide_process.counter_0 to unsigned_divider/state_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.361   0.299  unsigned_divider/divide_process.counter_0 (unsigned_divider/divide_process.counter_0)
+     LUT2:I1->O            1   0.097   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_lut<0> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<0> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<1> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<2> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<3> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<4> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<5> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<6> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<7> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<8> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<9> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<10> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<11> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<12> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<13> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<14> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<15> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<16> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<17> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<18> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<19> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<20> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<21> (unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_cy<21>)
+     XORCY:CI->O           2   0.370   0.688  unsigned_divider/Madd_divide_process.counter[31]_GND_72_o_add_15_OUT_xor<22> (unsigned_divider/divide_process.counter[31]_GND_72_o_add_15_OUT<22>)
+     LUT5:I0->O            2   0.097   0.515  unsigned_divider/GND_72_o_divide_process.counter[31]_equal_17_o<31>6 (unsigned_divider/GND_72_o_divide_process.counter[31]_equal_17_o<31>5)
+     LUT6:I3->O            1   0.097   0.000  unsigned_divider/state_FSM_FFd1-In1 (unsigned_divider/state_FSM_FFd1-In)
+     FD:D                      0.008          unsigned_divider/state_FSM_FFd1
+    ----------------------------------------
+    Total                      3.368ns (1.866ns logic, 1.502ns route)
+                                       (55.4% logic, 44.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 100273 / 304
+-------------------------------------------------------------------------
+Offset:              8.818ns (Levels of Logic = 18)
+  Source:            divisor<3> (PAD)
+  Destination:       unsigned_divider/remainder_59 (FF)
+  Destination Clock: clk rising
+
+  Data Path: divisor<3> to unsigned_divider/remainder_59
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.570  divisor_3_IBUF (divisor_3_IBUF)
+     LUT4:I0->O            4   0.097   0.309  one_complement_divisor/adder/first_16bits_block/CLA_block/C_OUT<1>1 (one_complement_divisor/adder/first_16bits_block/c_group<1>)
+     LUT5:I4->O            7   0.097   0.323  one_complement_divisor/adder/CLA_block/C_OUT<1>11 (one_complement_divisor/adder/CLA_block/C_OUT<1>1)
+     LUT5:I4->O            7   0.097   0.323  one_complement_divisor/adder/CLA_block/C_OUT<1>21 (one_complement_divisor/adder/CLA_block/C_OUT<1>2)
+     LUT5:I4->O            7   0.097   0.323  one_complement_divisor/adder/CLA_block/C_OUT<1>3 (one_complement_divisor/adder/C16<1>)
+     LUT5:I4->O            7   0.097   0.323  one_complement_divisor/adder/second_16bits_block/CLA_block/C_OUT<1>1 (one_complement_divisor/adder/second_16bits_block/c_group<1>)
+     LUT5:I4->O            6   0.097   0.318  one_complement_divisor/adder/CLA_block/C_OUT<2>11 (one_complement_divisor/adder/CLA_block/C_OUT<2>1)
+     LUT5:I4->O            5   0.097   0.575  one_complement_divisor/adder/CLA_block/C_OUT<2>21 (one_complement_divisor/adder/CLA_block/C_OUT<2>2)
+     LUT6:I2->O            1   0.097   0.693  unsigned_divider/GND_72_o_operand_b[31]_equal_8_o<31>4_SW0 (N527)
+     LUT6:I0->O            1   0.097   0.379  unsigned_divider/GND_72_o_operand_b[31]_equal_8_o<31>4 (unsigned_divider/GND_72_o_operand_b[31]_equal_8_o<31>3)
+     LUT4:I2->O            1   0.097   0.693  unsigned_divider/GND_72_o_operand_b[31]_equal_8_o<31>7_SW0 (N525)
+     LUT6:I0->O            9   0.097   0.720  unsigned_divider/GND_72_o_operand_b[31]_equal_8_o<31>7 (unsigned_divider/GND_72_o_operand_b[31]_equal_8_o)
+     LUT5:I0->O            2   0.097   0.299  unsigned_divider/Mmux_state[3]_X_10_o_wide_mux_20_OUT10311_1 (unsigned_divider/Mmux_state[3]_X_10_o_wide_mux_20_OUT10311)
+     LUT6:I5->O            3   0.097   0.305  unsigned_divider/Mmux_state[3]_X_10_o_wide_mux_20_OUT1102_SW0 (N167)
+     LUT6:I5->O            4   0.097   0.309  unsigned_divider/Mmux_state[3]_X_10_o_wide_mux_20_OUT1103_SW1 (N198)
+     LUT6:I5->O            1   0.097   0.000  unsigned_divider/add_sub_instance/adder/second_16bits_block/third_4bits/Mxor_sum<3>_xo<0>1_SW0_G (N514)
+     MUXF7:I1->O           1   0.279   0.511  unsigned_divider/add_sub_instance/adder/second_16bits_block/third_4bits/Mxor_sum<3>_xo<0>1_SW0 (N423)
+     LUT6:I3->O            1   0.097   0.000  unsigned_divider/Mmux_state[3]_X_10_o_wide_mux_20_OUT1103 (unsigned_divider/state[3]_X_10_o_wide_mux_20_OUT<59>)
+     FD:D                      0.008          unsigned_divider/remainder_59
+    ----------------------------------------
+    Total                      8.818ns (1.840ns logic, 6.978ns route)
+                                       (20.9% logic, 79.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 66 / 66
+-------------------------------------------------------------------------
+Offset:              0.640ns (Levels of Logic = 1)
+  Source:            quotient_31 (FF)
+  Destination:       quotient<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: quotient_31 to quotient<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.361   0.279  quotient_31 (quotient_31)
+     OBUF:I->O                 0.000          quotient_31_OBUF (quotient<31>)
+    ----------------------------------------
+    Total                      0.640ns (0.361ns logic, 0.279ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.368|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 16.52 secs
+ 
+--> 
+
+
+Total memory usage is 203940 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :   13 (   0 filtered)
+

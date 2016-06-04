@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ctnguyen/Works/MultiCycleProcessor/tb_thirty_bits_add_sub_isim_beh1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_thirty_bits_add_sub" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb_thirty_bits_add_sub/operand_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">operand_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">operand_a[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_thirty_bits_add_sub/operand_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">operand_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">operand_b[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_thirty_bits_add_sub/mode" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mode</obj_property>
+      <obj_property name="ObjectShortName">mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_thirty_bits_add_sub/overflow" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">overflow</obj_property>
+      <obj_property name="ObjectShortName">overflow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_thirty_bits_add_sub/carry_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">carry_out</obj_property>
+      <obj_property name="ObjectShortName">carry_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_thirty_bits_add_sub/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_thirty_bits_add_sub/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_thirty_bits_add_sub/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

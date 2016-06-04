@@ -1,0 +1,8 @@
+vhdl work "four_bits_CLA_adder.vhd"
+vhdl work "carry_look_ahead_block.vhd"
+vhdl work "sixteen_bits_adder.vhd"
+vhdl work "thirtytwo_bits_adder.vhd"
+vhdl work "thirtytwo_bits_add_sub.vhd"
+vhdl work "unsigned_fixedpoint_divider_module.vhd"
+vhdl work "fixedpoint_divider_module.vhd"
+vhdl work "tb_fixedpoint_divider_module.vhd"

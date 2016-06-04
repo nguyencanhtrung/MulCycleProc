@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ctnguyen/Works/MultiCycleProcessor/tb_fixedpoint_divider_module_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_fixedpoint_divider_module" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb_fixedpoint_divider_module/dividend" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dividend[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dividend[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_divider_module/divisor" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">divisor[31:0]</obj_property>
+      <obj_property name="ObjectShortName">divisor[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_divider_module/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_divider_module/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_divider_module/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_divider_module/quotient" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">quotient[31:0]</obj_property>
+      <obj_property name="ObjectShortName">quotient[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_divider_module/remainder" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">remainder[31:0]</obj_property>
+      <obj_property name="ObjectShortName">remainder[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_divider_module/done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_divider_module/invalidop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">invalidop</obj_property>
+      <obj_property name="ObjectShortName">invalidop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_divider_module/bit_width" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">bit_width</obj_property>
+      <obj_property name="ObjectShortName">bit_width</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fixedpoint_divider_module/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

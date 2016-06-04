@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/ctnguyen/Works/MultiCycleProcessor/thirtytwo_bits_add_sub.xst" -ofn "/home/ctnguyen/Works/MultiCycleProcessor/thirtytwo_bits_add_sub.syr" 
+xst -intstyle ise -ifn "/home/ctnguyen/Works/MultiCycleProcessor/thirtytwo_bits_add_sub.xst" -ofn "/home/ctnguyen/Works/MultiCycleProcessor/thirtytwo_bits_add_sub.syr" 
